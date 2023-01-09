@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc_hanh_1</title>
+</head>
+<body>
+<input id="nhap" type="number">
+<button onclick="ketqua()">ketqua</button>
+<script>
+    function ketqua() {
+        let a=+document.getElementById("nhap").value;
+       if (a % 4 == 0 ) {
+           if (a % 100 ==0){
+               if ( a % 400 ==0)
+               {alert("Năm nhuận");}
+               else {
+                   alert("Đây là năm không nhuận");}
+
+           }else ( a % 100 !==0 );
+           {
+               alert ("Đây là năm nhuận")};
+
+
+       }else {
+          alert(" Đây là năm không nhuận");
+       }
+
+    }
+</script>
+</body>
+</html>
